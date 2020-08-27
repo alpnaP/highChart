@@ -4,13 +4,11 @@ import * as Highcharts from 'highcharts';
 @Component({
   selector: 'app-basic-column-chart',
   templateUrl: './basic-column-chart.component.html',
-  styleUrls: ['./basic-column-chart.component.scss']
+  styleUrls: ['./basic-column-chart.component.scss'],
 })
 export class BasicColumnChartComponent implements OnInit {
+  Highcharts = Highcharts;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

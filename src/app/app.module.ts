@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {HighchartsChartModule} from 'highcharts-angular';
+import { HighchartsChartModule } from 'highcharts-angular';
 import { BasicComponent } from './lineChart/basic/basic.component';
 import { DataLabelComponent } from './lineChart/data-label/data-label.component';
 import { TimeSeriesComponent } from './lineChart/time-series/time-series.component';
@@ -21,16 +21,13 @@ import { StackedAreaChartComponent } from './areaChart/stacked-area-chart/stacke
 import { PercentageComponent } from './areaChart/percentage/percentage.component';
 import { InvertedAreaComponent } from './areaChart/inverted-area/inverted-area.component';
 import { SplineAreaComponent } from './areaChart/spline-area/spline-area.component';
-import { BasicColumnChartComponent } from './columnChart/basic-column-chart/basic-column-chart.component';
-import { ColNegComponent } from './columnChart/col-neg/col-neg.component';
-import { StackedColumnComponent } from './columnChart/stacked-column/stacked-column.component';
-import { GroupedColumnComponent } from './columnChart/grouped-column/grouped-column.component';
-import { ColStackPercentComponent } from './columnChart/col-stack-percent/col-stack-percent.component';
-import { ColRotateLabelComponent } from './columnChart/col-rotate-label/col-rotate-label.component';
-import { ColRangeComponent } from './columnChart/col-range/col-range.component';
-
-
-
+// import { BasicColumnChartComponent } from './columnChart/basic-column-chart/basic-column-chart.component';
+// import { ColNegComponent } from './columnChart/col-neg/col-neg.component';
+// import { StackedColumnComponent } from './columnChart/stacked-column/stacked-column.component';
+// import { GroupedColumnComponent } from './columnChart/grouped-column/grouped-column.component';
+// import { ColStackPercentComponent } from './columnChart/col-stack-percent/col-stack-percent.component';
+// import { ColRotateLabelComponent } from './columnChart/col-rotate-label/col-rotate-label.component';
+// import { ColRangeComponent } from './columnChart/col-range/col-range.component';
 
 @NgModule({
   declarations: [
@@ -52,25 +49,16 @@ import { ColRangeComponent } from './columnChart/col-range/col-range.component';
     PercentageComponent,
     InvertedAreaComponent,
     SplineAreaComponent,
-    BasicColumnChartComponent,
-    ColNegComponent,
-    StackedColumnComponent,
-    GroupedColumnComponent,
-    ColStackPercentComponent,
-    ColRotateLabelComponent,
-    ColRangeComponent, 
-  
+    // BasicColumnChartComponent,
+    // ColNegComponent,
+    // StackedColumnComponent,
+    // GroupedColumnComponent,
+    // ColStackPercentComponent,
+    // ColRotateLabelComponent,
+    // ColRangeComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HighchartsChartModule,
-   
-
-  ],
+  imports: [BrowserModule, AppRoutingModule, HighchartsChartModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
-
-
+export class AppModule {}
